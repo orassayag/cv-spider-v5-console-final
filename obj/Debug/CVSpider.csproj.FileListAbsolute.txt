@@ -1,0 +1,6 @@
+C:\Or\Web\Others\CVConsole\CVSpider\CVSpider\bin\Debug\CVSpider.exe.config
+C:\Or\Web\Others\CVConsole\CVSpider\CVSpider\obj\Debug\CVSpider.csprojResolveAssemblyReference.cache
+C:\Or\Web\Others\CVConsole\CVSpider\CVSpider\bin\Debug\CVSpider.exe
+C:\Or\Web\Others\CVConsole\CVSpider\CVSpider\bin\Debug\CVSpider.pdb
+C:\Or\Web\Others\CVConsole\CVSpider\CVSpider\obj\Debug\CVSpider.exe
+C:\Or\Web\Others\CVConsole\CVSpider\CVSpider\obj\Debug\CVSpider.pdb
