@@ -1,7 +1,7 @@
 # CV Spider V5 Console Final
 
 Built in January 2016.
-Fifth and final version of CV spider that search with Google, Ask.com, AOL search, Walla search, BING, Yahoo search in view source, emails that matches some keys, and send automatic emails that found, using only console programming.
+This is the fifth and final version of CV spider that search with Google, Ask.com, AOL search, Walla search, BING, Yahoo search in view source, emails that matches some keys, and send automatic emails that found, using only console programming.
 
 ## Getting Started
 
@@ -11,11 +11,10 @@ Clone the project to your computer.
 
 You'll need to install .Net and SQL Stored Procedure (Recommended to work with SQL management studio).
 
-
 ## Built With
 
 * [ASP.NET Console](https://docs.microsoft.com/en-us/dotnet/api/system.console?view=netframework-4.7.2) - The web framework used.
-* [SQL](https://azure.microsoft.com/en-us/services/sql-database/) - The database used. 
+* [SQL](https://azure.microsoft.com/en-us/services/sql-database/) - The database used.
 * [Stored Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/create-a-stored-procedure?view=sql-server-2017) - The component of .NET Framework.
 * [GIT](https://git-scm.com/) - Source Management.
 
@@ -25,7 +24,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
