@@ -1,7 +1,6 @@
 # CV Spider V5 Console Final
 
-Built in January 2016.
-This is the fifth and final version of CV spider that search with Google, Ask.com, AOL search, Walla search, BING, Yahoo search in view source, emails that matches some keys, and send automatic emails that found, using only console programming.
+Built in January 2016. This is the fifth and final version of CV spider that search with Google, Ask.com, AOL search, Walla search, BING, Yahoo search in view source, emails that matches some keys, and send automatic emails that found, using only console programming.
 
 ## Getting Started
 
