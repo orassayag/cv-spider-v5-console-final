@@ -122,7 +122,7 @@ namespace CVSpider.Code
             }
             catch
             {
-                Console.WriteLine("Faild to print mails...");
+                Console.WriteLine("Failed to print mails...");
                 return;
             }
             Console.WriteLine("Finish to print mails...");

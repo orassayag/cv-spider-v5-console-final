@@ -193,9 +193,9 @@ namespace CVSpider.Code
                 return false;
             }
 
-            string[] spliter1 = mail.Split('.');
+            string[] splitter1 = mail.Split('.');
             int shtrudelIndex = mail.IndexOf('@');
-            foreach(string dotSplit in spliter1)
+            foreach(string dotSplit in splitter1)
             {
                 if (dotSplit.Length <= 1)
                 {
@@ -206,8 +206,8 @@ namespace CVSpider.Code
                 }
             }
 
-            string[] spliter2 = mail.Split('@');
-            foreach (string mailPart in spliter2)
+            string[] splitter2 = mail.Split('@');
+            foreach (string mailPart in splitter2)
             {
                 if (!string.IsNullOrEmpty(mailPart))
                 {

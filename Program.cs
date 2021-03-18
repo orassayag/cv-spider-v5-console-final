@@ -13,7 +13,7 @@ namespace CVSpider
         public static void Main(string[] args)
         {
             Console.Write(
-@"Select ation:
+@"Select action:
 -------------
 1 - Search by random words - Multi threads
 2 - Search by random words - Single threads
