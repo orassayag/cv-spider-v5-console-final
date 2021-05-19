@@ -1,6 +1,6 @@
 # CV Spider V5 Console Final
 
-Built in January 2016. This is the fifth and final version of CV spider that searches with Google, Ask.com, AOL search, Walla search, BING, Yahoo search in view source, emails that match some keys, and send automatic emails that are found, using only console programming.
+Built in January 2016. This is the fifth and final version of CV spider that searches with Google, Ask.com, AOL search, Walla search, Bing, Yahoo search in view source, emails that match some keys, and send automatic emails that are found, using only console programming.
 
 ## Getting Started
 
@@ -8,14 +8,14 @@ Clone the project to your computer.
 
 ### Prerequisites
 
-You'll need to install .Net and SQL Stored Procedure (Recommended to work with SQL management studio).
+You'll need to install .NET and SQL Stored Procedure (Recommended to work with SQL management studio).
 
 ## Built With
 
 * [ASP.NET Console](https://docs.microsoft.com/en-us/dotnet/api/system.console?view=netframework-4.7.2) - The web framework used.
 * [SQL](https://azure.microsoft.com/en-us/services/sql-database/) - The database used.
-* [Stored Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/create-a-stored-procedure?view=sql-server-2017) - The component of .NET Framework.
-* [GIT](https://git-scm.com/) - Source Management.
+* [Stored Procedure](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/create-a-stored-procedure?view=sql-server-2017) - The component of .NET framework.
+* [GIT](https://git-scm.com/) - Source management.
 
 ## Contributing
 
