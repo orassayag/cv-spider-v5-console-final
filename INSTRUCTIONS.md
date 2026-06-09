@@ -1,15 +1,46 @@
-# Instructions
+# Setup and Usage Instructions
 
-## Setup Instructions
+## Table of Contents
 
-### Prerequisites
+1. [Version & Metadata](#version--metadata)
+2. [Prerequisites](#prerequisites)
+3. [Initial Setup](#initial-setup)
+4. [Database Setup](#database-setup)
+5. [Configuration](#configuration)
+6. [Available Commands](#available-commands)
+7. [Running Scripts](#running-scripts)
+8. [Best Practices](#best-practices)
+9. [Extending the Application](#extending-the-application)
+10. [Documentation & Resources](#documentation--resources)
 
-1. **Visual Studio** (2015 or later) or any C# compatible IDE
-2. **.NET Framework 4.5.2** or higher
-3. **SQL Server** (2012 or later) - Express edition is sufficient
-4. **SQL Server Management Studio** (SSMS) - Recommended for database management
+## Version & Metadata
 
-### Installation
+- **Version**: 5.0.0 (Final)
+- **Last Updated**: 2026-06-09
+- **Environment**: .NET Framework 4.5.2
+
+## Prerequisites
+
+### System Requirements
+
+- **OS**: Windows 7/8/10/11
+- **Runtime**: .NET Framework 4.5.2 or higher
+- **Database**: SQL Server 2012+ (Express is sufficient)
+- **IDE**: Visual Studio 2015+ (optional, for development)
+
+### Knowledge Prerequisites
+
+- Basic understanding of C# and .NET Framework
+- Familiarity with SQL Server and Stored Procedures
+- Understanding of web scraping and regex (helpful but not required)
+
+## Initial Setup
+
+### 1. Install Dependencies
+
+This project relies on standard .NET Framework libraries. Ensure you have the .NET 4.5.2 Developer Pack installed on your machine.
+
+### 2. Project Initialization
 
 1. Clone or download the project to your computer:
    ```bash
@@ -17,11 +48,11 @@
    cd cv-spider-v5-console-final
    ```
 
-2. Open `CVSpider.sln` in Visual Studio
+2. Open `CVSpider.sln` in Visual Studio.
 
-3. Restore NuGet packages (if prompted)
+3. Build the solution (`F6`) to verify all references are resolved.
 
-### Database Setup
+## Database Setup
 
 1. Create a new database in SQL Server:
    ```sql
@@ -86,7 +117,7 @@
    END;
    ```
 
-### Configuration
+## Configuration
 
 1. Open `App.config` and update the connection string:
    ```xml
@@ -97,7 +128,48 @@
    </connectionStrings>
    ```
 
-2. Configure search settings:
+2. Configure search settings in `<appSettings>`:
+   - `StartIndex`: Starting point for search iterations.
+   - `EndIndex`: Ending point for search iterations.
+   - `LogMailsPath`: File system path for exporting results.
+
+## Available Commands
+
+### Development Commands
+
+Use these within Visual Studio or via MSBuild:
+
+- **Build**: `F6` or `Ctrl+Shift+B`
+- **Run**: `F5` (Debug) or `Ctrl+F5` (Start without debugging)
+- **Clean**: Right-click Solution -> Clean Solution
+
+### Running Scripts
+
+**Database Initialization**:
+Run the provided SQL scripts in SQL Server Management Studio (SSMS) to set up the environment.
+
+**Console Operations**:
+1. **Option 1**: Multi-threaded search (Parallel processing).
+2. **Option 2**: Single-threaded search (Sequential).
+3. **Option 3**: Export unique emails to text file.
+
+## Best Practices
+
+- **Avoid IP Bans**: Don't set `MaxDegreeOfParallelism` too high in `Program.cs`.
+- **Database Connectivity**: Always test your connection string in `App.config` before starting a long run.
+- **Exporting**: Regularly export your data using Option 3 to ensure you have file-based backups of unique emails.
+
+## Extending the Application
+
+- **Adding Search Engines**: Modify the search loop in [Actions.cs](file:///c:/Or/web/projects/cv-spider-v5-console-final/Code/Actions.cs) to include other providers like Bing or Yahoo.
+- **Improving Extraction**: Update the regex patterns in [TextUtils.cs](file:///c:/Or/web/projects/cv-spider-v5-console-final/Code/TextUtils.cs) to catch more edge cases in email formats.
+
+## Documentation & Resources
+
+- **Project README**: See [README.md](file:///c:/Or/web/projects/cv-spider-v5-console-final/README.md) for a high-level overview.
+- **External Resources**:
+  - [.NET Framework Documentation](https://learn.microsoft.com/en-us/dotnet/framework/)
+  - [SQL Server Stored Procedures](https://learn.microsoft.com/en-us/sql/relational-databases/stored-procedures/stored-procedures-database-engine)
    ```xml
    <appSettings>
      <add key="StartIndex" value="0" />
@@ -265,8 +337,8 @@ example1@domain.com, example2@domain.com, example3@domain.com
 
 ## Author
 
-* **Or Assayag** - *Initial work* - [orassayag](https://github.com/orassayag)
-* Or Assayag <orassayag@gmail.com>
-* GitHub: https://github.com/orassayag
-* StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
-* LinkedIn: https://linkedin.com/in/orassayag
+- **Or Assayag** - _Initial work_ - [orassayag](https://github.com/orassayag)
+- Or Assayag <orassayag@gmail.com>
+- GitHub: https://github.com/orassayag
+- StackOverflow: https://stackoverflow.com/users/4442606/or-assayag?tab=profile
+- LinkedIn: https://linkedin.com/in/orassayag

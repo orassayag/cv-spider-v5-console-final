@@ -1,21 +1,34 @@
 {
-    "cSpell.words": [
-        "Assayag",
-        "Gsucsg",
-        "comn",
-        "cvid",
-        "drushim",
-        "gmail",
-        "ilcom",
-        "mefarsem",
-        "muni",
-        "nana",
-        "netl",
-        "njet",
-        "orassayag",
-        "oreq",
-        "qsrc",
-        "shtrudel",
-        "xargs"
-    ]
+  "cSpell.words": [
+    "Assayag",
+    "CCPA",
+    "comn",
+    "cvid",
+    "drushim",
+    "GETDATE",
+    "gmail",
+    "Gsucsg",
+    "ilcom",
+    "mefarsem",
+    "muni",
+    "nana",
+    "netl",
+    "njet",
+    "NVARCHAR",
+    "orassayag",
+    "oreq",
+    "qsrc",
+    "Ravid",
+    "shtrudel",
+    "SSMS",
+    "SSPI",
+    "xargs"
+  ],
+  "cSpell.ignorePaths": [
+    "coverage",
+    "node_modules",
+    "dist",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml"
+  ]
 }
